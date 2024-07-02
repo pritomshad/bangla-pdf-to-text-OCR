@@ -1,6 +1,8 @@
 # bangla-pdf-to-text-OCR
 This base describes how to create a Txt document/EPUB from an image-type pdf
 
+***These codes are only tested for Windows PCs. For Linux update the directories in ocr.py.***
+
 *pre-requisites: 
 1. Tesseract engine (https://github.com/UB-Mannheim/tesseract/wiki) - while setting up make sure to select Bangla as a language.
 2. Calibre (https://calibre-ebook.com/download)
