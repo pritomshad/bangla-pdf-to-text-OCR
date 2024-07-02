@@ -8,6 +8,7 @@ os.environ['TESSDATA_PREFIX'] = r'C:\Program Files\Tesseract-OCR\tessdata'
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 full_book = ''
+book_name = input("Book name: ")
 pages = int(input("Page numbers in your book: "))
 filetype = input("File type of the images (i.e. jpg, png): ")
 
@@ -19,5 +20,5 @@ for i in range(1,pages+1):
 
 
 # Write the extracted text to a text file
-with open('Syed Mujtaba Ali Rachanaboli 3.txt', 'w', encoding='utf-8') as file:
+with open((book_name + '.txt'), 'w', encoding='utf-8') as file:
     file.write(full_book)
